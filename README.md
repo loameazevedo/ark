@@ -1,4 +1,9 @@
-noah-generic
+Ark Generic
 ==================
 
-Project containing the base project management members
+Aplicação base para o sistema Ark. Ele contêm as seguintes funcionalidades:
+
+ - Gerenciamento de Igrejas;
+ - Gerenciamento de Membros.
+
+Licença: GPL
