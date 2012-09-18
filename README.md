@@ -1,4 +1,4 @@
-openchurch-generic
+noah-generic
 ==================
 
-Projeto que contêm a base do projeto de gerenciamento de membros
+Project containing the base project management members
