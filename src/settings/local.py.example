@@ -1,19 +1,27 @@
-"""Settings for Local Server"""
-import os
+"""
+Example settings for local development
 
+Use this file as a base for your local development settings and copy
+it to src/settings/local.py. It should not be checked into
+your code repository.
+
+"""
 from src.settings.base import *
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-MEDIA_ROOT = os.path.join(PROJECT_DIR, 'uploads')
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+ADMINS = (
+    ('You', 'your@email'),
+)
+MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_DIR, 'ark.db'),
+        'NAME': os.path.join(PROJECT_DIR, 'dev.db'),
     }
 }
 
-# WSGI_APPLICATION = '{{ project_name }}.wsgi.dev.application'
+# ROOT_URLCONF = '{{ project_name }}.urls.local'
+# WSGI_APPLICATION = '{{ project_name }}.wsgi.local.application'
