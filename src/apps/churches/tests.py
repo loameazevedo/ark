@@ -22,4 +22,4 @@ class ChurchModelTest(TestCase):
 
     def test_unicode(self):
         """Retorna a representação do objeto"""
-        self.assertEquals('Church: %s', unicode(self.church))
+        self.assertEquals('Church: Church Test', unicode(self.church))

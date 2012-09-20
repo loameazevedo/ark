@@ -27,3 +27,6 @@ class Church(models.Model):
     email = models.EmailField(u"E-mail")
     phone = models.CharField(u"Telefone", max_length=14)
     members = models.PositiveIntegerField(u"Total de Membros")
+
+    def __unicode__(self):
+        return u'Church: %s' % (self.name,)
