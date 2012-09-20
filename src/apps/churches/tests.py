@@ -19,3 +19,7 @@ class ChurchModelTest(TestCase):
     def test_create(self):
         """Registra a igreja com sucesso"""
         self.assertEquals(self.church.pk, 1)
+
+    def test_unicode(self):
+        """Retorna a representação do objeto"""
+        self.assertEquals('Church: %s', unicode(self.church))
