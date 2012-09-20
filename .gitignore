@@ -31,3 +31,6 @@ pip-log.txt
 
 # Temporary Files
 *.sw[po]
+
+# local settings
+local.py
