@@ -34,3 +34,6 @@ pip-log.txt
 
 # local settings
 local.py
+
+# local database
+*.db
