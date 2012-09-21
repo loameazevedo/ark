@@ -28,5 +28,9 @@ class Church(models.Model):
     phone = models.CharField(u"Telefone", max_length=14)
     members = models.PositiveIntegerField(u"Total de Membros")
 
+    class Meta:
+        verbose_name = u"Igreja"
+        verbose_name_plural = u"Igrejas"
+
     def __unicode__(self):
         return u'Church: %s' % (self.name,)
